@@ -67,6 +67,30 @@ try:
 
 except ValueError:
     print("Input tidak valid. Masukkan angka.")
+
+    if hadir < 80:
+        print("Kehadiran tidak memenuhi syarat minimal 80%")
+        print("Status kehadiran: Belum Lulus")
+    else:
+        print("Status kehadiran: Lulus")
+
+        if akhir >= 85:
+            predikat = "A"
+        elif akhir >= 70:
+            predikat = "B"
+        elif akhir >= 60:
+            predikat = "C"
+        elif akhir >= 50:
+            predikat = "D"
+        else:
+            predikat = "E"
+            print(f"Predikat = {predikat}")
+        if predikat in ["A", "B", "C"]:
+            status = "Lulus"
+        else:
+            status = "Belum Lulus"
+    print("Predikat:", predikat)
+    print("Status:", status)
 ```
 
 ## Refleksi

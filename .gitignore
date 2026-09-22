@@ -1,5 +1,5 @@
-praktik/
-└── validasi_klasifikasi_nilai.py
-
-README.md
-.gitignore
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
